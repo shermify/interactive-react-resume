@@ -1,0 +1,118 @@
+{
+  "name": "Daniel Sherman",
+  "title": "Interactive Resume",
+  "profile": {
+    "lead": "A versitile software developer with a strong science and math background.",
+    "description": "Hi, my name is Daniel. I'm a web-oriented software engineer with a strong focus on quality and user experience.  I love working in a team but am also very comfortable working alone or taking the lead.  Complex, data-driven web applications are my specialty and I'm always up for a new challenege!"
+  },
+  "experience": {
+    "lead": "\"In wisdom gathered over time I have found that every experience is a form of exploration.\"",
+    "quoteBy": "- Ansel Adams",
+    "experienceList": [
+      {
+        "company": "Phigenics LLC",
+        "date": "2010-2017",
+        "description": {
+          "paragraphs": ["At Phigenics, I helped pioneer a revolutionary water management saas platform currently in use in hundreds of hospitals, universities, and retail stores across the country.", "Following the success of the water management platform, I created and lead development on a remote water quality sensor system now used to monitor water quality in large facilities across the United States.", "I designed and developed a Laboratory Information Management System (LIMS) in use in multiple labs in the US and internationally, responsible for processing hundreds of thousands of samples and generating reports for hundreds of customers.", "On the backend, I built out a highly available and scalable architecture on AWS using technologies such as EC2, ECS/Docker, S3, SES, and CloudFront."]
+        },
+        "links": [
+          {
+            "url": "https://phigenics.com",
+            "text": "Phigenics"
+          }
+        ]
+      }, {
+        "company": "Nerites Corp",
+        "date": "2008-2010",
+        "description": {
+          "paragraphs": ["Nerites was spun off out of the Messersmith research group at Northwestern while I was working there as a research assistant. As one of the first employees at Nerites, I was involved in building out our laboratory and testing capabilities, running experiments, and performing data analysis on the results."]
+        }
+      }, {
+        "company": "Northwestern University",
+        "date": "2008-2010",
+        "description": {
+          "paragraphs": ["I started working at Northwestern University as a research assistant. After about 6 months, I began my own research on self-assembling silver nanoparticle monolayer coatings. I contributed to two patents during my time at Northwestern."]
+        }
+      }
+    ]
+  },
+  "skills": {
+    "lead": "\"Learning never exhausts the mind.\"",
+    "quoteBy": "- Leonardo da Vinci",
+    "skillList": {
+      "programming": [
+        {
+          "name": "Javascript",
+          "percent": 100,
+          "image": "javascript.png"
+        }, {
+          "name": "React.js",
+          "percent": 100,
+          "image": "react.png"
+        }, {
+          "name": "Node.js",
+          "percent": 100,
+          "image": "node.png"
+        }, {
+          "name": "HTML5",
+          "percent": 100,
+          "image": "html5.png"
+        }, {
+          "name": "CSS3",
+          "percent": 100,
+          "image": "css3.png"
+        }, {
+          "name": "Bootstrap",
+          "percent": 100,
+          "image": "bootstrap.png"
+        }, {
+          "name": "SQL",
+          "percent": 100,
+          "image": "sql.png"
+        }, {
+          "name": "Redux",
+          "percent": 70,
+          "image": "redux.png"
+        }, {
+          "name": "NoSQL",
+          "percent": 80,
+          "image": "mongo.png"
+        }
+      ],
+      "devops": [
+        {
+          "name": "Amazon AWS",
+          "percent": 100,
+          "image": "aws.png"
+        }, {
+          "name": "TravisCI",
+          "percent": 100,
+          "image": "travis.png"
+        }, {
+          "name": "Github",
+          "percent": 100,
+          "image": "github.png"
+        }, {
+          "name": "Linux",
+          "percent": 100,
+          "image": "linux.png"
+        }, {
+          "name": "IIS",
+          "percent": 100,
+          "image": "iis.png"
+        }, {
+          "name": "Test Tools",
+          "percent": 100,
+          "image": "test.png"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "lead": "\"Hey, I just met you and this is crazy, but here's my number, so call me maybe\"",
+    "quoteBy": "- Carly Rae Jepson",
+    "text": "Feel free to reach out if you are a fellow programmer, have an interesting product/employment opportunity, or if you just want to challenge me to a game of foosball. :)",
+    "phone": "773-551-3085",
+    "email": "dsherman.me@gmail.com"
+  }
+}

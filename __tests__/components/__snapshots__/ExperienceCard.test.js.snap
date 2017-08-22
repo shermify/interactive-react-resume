@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceCard renders correctly 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-block"
+  >
+    <h4
+      className="card-title"
+    >
+      test company
+    </h4>
+    <h6
+      className="card-subtitle mb-2 text-muted"
+    >
+      1/1/2017
+    </h6>
+    <div
+      className="card-text text-justify"
+    >
+      <p>
+        description 1
+      </p>
+      <p>
+        description 2
+      </p>
+    </div>
+  </div>
+</div>
+`;

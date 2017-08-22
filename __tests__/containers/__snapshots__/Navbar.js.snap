@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> renders correctly 1`] = `
+<div
+  className="menu"
+>
+  <div
+    className="animate-nav"
+    style={
+      Object {
+        "maxHeight": "55px",
+      }
+    }
+  >
+    <nav
+      className="navbar navbar-expand-lg"
+    >
+      <button
+        className="navbar-toggler mb-3"
+        onClick={[Function]}
+        type="button"
+      >
+        <test-file-stub
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="navbar-collapse collapse show"
+        id="navbarNav"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              onClick={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              onClick={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              Profile
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              onClick={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              Experience
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              onClick={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              Skills
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              onClick={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+`;

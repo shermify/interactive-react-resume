@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  node
+install: npm install
+script: npm run build:dist
+jobs:
+  include:
+    - stage: test
+      script: npm run lint
+    - script: npm test
+    - stage: deploy
+      deploy:
+        provider: s3
+        access_key_id: AKIAJ2DZKI7GE5CKHXSQ
+        secret_access_key:
+          secure: PGR/QURec4LRKaQ/NyiEzBGkHvSGqtv3RZQueAZ51Ky+8qU0vFSGd/F5mq76+0M9ZyjB5DtFiqsaiHrn1nNCjkcsS6Hc2y+kznxgHJVEq64eBKShorn0n10xSk5cMT70aDsA5+z8Tw9GrDaOuT8Q3OtUslhiNU3Xigyfl+Cy9OmB+4YJQMLE2Rkt14ElRHeTGcRLPhoU+3uxuQ3kjojAK8SlGUv1q3a+05GKW3vHs+vqYqxbKLNMyYu9i+VdN/2/bCWpwt5OW5uOWzbbq1S7tmDTs332okzR6sQuO4C5IszJdRJko6vRpd6sYUxvBbIOGUBhxShQDvMxUQvihUQrmncsMt5IaRB3fPUiInJrS8VabcY8XZWUzDtu6sCc27DEB+mAZcakJwApxOgW6nx+K62iCvV3vc0NRldyZ4YO5dsVC5IKFdEzxB0K+b5Fk0Jtgs6EARefcAmyQH4vLot7JkzE1h+47/Ijx00yxZ7V98yZlOq3Uo2m9YtP6L4YqgTnBsUVywi6pFrx8DnB6cX1S3wKtvkBY8ZZ9Us66aH8I8/ip1FmCOfbmtWMudY5GeZb5soI/a1AcovRk8tCZNISv2pEhOncm7ENXD5QQYizAlpu2BUy0+Q1ETD9H1UVBu17nUYxEWq62hqjpNDeD8IUXmMlCShBc2XTmvi47CsspL4=
+        bucket: shermify
+        local-dir: dist
+        acl: public_read
+        skip_cleanup: true

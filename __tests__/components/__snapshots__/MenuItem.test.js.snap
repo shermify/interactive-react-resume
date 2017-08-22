@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuItem /> renders correctly 1`] = `
+<li
+  className="nav-item"
+>
+  <a
+    className="nav-link"
+    onClick={[Function]}
+    role="menuitem"
+    tabIndex="0"
+  >
+    Test Link
+  </a>
+</li>
+`;

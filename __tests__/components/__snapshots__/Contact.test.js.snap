@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> renders correctly 1`] = `
+<section
+  id="contact"
+  style={
+    Object {
+      "backgroundColor": "#f2f2f2",
+      "color": "#333",
+    }
+  }
+>
+  <div
+    className="container section"
+  >
+    <h2>
+      Contact
+    </h2>
+    <p
+      className="lead"
+    >
+      test lead
+      <br />
+      test quote
+    </p>
+    <hr />
+    <div>
+      <div>
+        <p>
+          jkvsdhf kjh kjfhkjfjk j jhk
+        </p>
+        <p>
+          Tel: 
+          773-551-3085
+          <br />
+          Email: 
+          example
+          <span
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          >
+            f3hy78Y*&97hy
+          </span>
+          @
+          example.com
+          <br />
+          <a
+            href="https://linkedin.com/in/dlsherman"
+          >
+            Linkedin
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

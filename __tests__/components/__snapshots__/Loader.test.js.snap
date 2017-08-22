@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> style changes to display: block on visible = true 1`] = `
+<div
+  style={
+    Object {
+      "display": "block",
+      "height": "312px",
+      "paddingTop": "50px",
+      "textAlign": "center",
+    }
+  }
+>
+  <test-file-stub />
+</div>
+`;
+
+exports[`<Loader /> style changes to display: none on visible = false 1`] = `
+<div
+  style={
+    Object {
+      "display": "none",
+      "height": "312px",
+      "paddingTop": "50px",
+      "textAlign": "center",
+    }
+  }
+>
+  <test-file-stub />
+</div>
+`;

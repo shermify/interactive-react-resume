@@ -1,0 +1,34 @@
+$toggle: rgb(80, 43, 129);
+$toggle-border: #800080;
+$toggle-icon: rgb(139, 116, 170);
+
+.menu {
+  background-color: #4d004d;
+  color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-toggler {
+  background-color: $toggle;
+  border: 2px solid $toggle-border;
+}
+
+.navbar-toggler-icon {
+  fill: $toggle-icon;
+}
+
+.nav-item {
+  a {
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.card {
+  background-color: transparent;
+  border: 0;
+  margin: 0 0 50px;
+}

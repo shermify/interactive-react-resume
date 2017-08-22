@@ -1,0 +1,21 @@
+$background-image: '../images/background.jpg';
+
+.cover {
+  background: url($background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+
+  .container {
+    @include media-breakpoint-down(sm) {
+      top: 20%;
+    }
+
+    color: $white;
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    top: 30%;
+  }
+}

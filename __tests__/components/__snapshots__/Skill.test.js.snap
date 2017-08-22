@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Skill /> renders correctly 1`] = `
+<div
+  className="skill"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <img
+        alt="Test skill"
+        height="45px"
+        src="test-file-stub"
+        width="45px"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <svg
+        height="15px"
+        width={100}
+      >
+        <defs>
+          <linearGradient
+            id="Gradient1"
+          >
+            <stop
+              offset="0%"
+              stopColor="blue"
+            />
+            <stop
+              offset="100%"
+              stopColor="purple"
+            />
+          </linearGradient>
+        </defs>
+        <rect
+          fill="lightgray"
+          height="50"
+          width="100"
+          x="0"
+          y="0"
+        />
+        <rect
+          fill="url(#Gradient1)"
+          height="50"
+          width={60}
+          x="0"
+          y="0"
+        />
+      </svg>
+      <p
+        style={
+          Object {
+            "width": 100,
+          }
+        }
+      >
+        Test skill
+      </p>
+    </div>
+  </div>
+</div>
+`;
