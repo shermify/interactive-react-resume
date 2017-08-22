@@ -6,7 +6,6 @@ import Person from '../images/icons/person.svg';
 import Thumb from '../images/icons/thumb-up.svg';
 import github from '../images/logos/github.png';
 import linkedin from '../images/logos/linkedin.png';
-import mypic from '../images/me2.jpg';
 
 const iconStyle = {
   height: '14px',
