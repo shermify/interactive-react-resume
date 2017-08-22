@@ -1,20 +1,19 @@
 language: node_js
-node_js:
-  node
+node_js: node
 install: npm install
 script: npm run build:dist
 jobs:
   include:
-    - stage: test
-      script: npm run lint
-    - script: npm test
-    - stage: deploy
-      deploy:
-        provider: s3
-        access_key_id: AKIAJ2DZKI7GE5CKHXSQ
-        secret_access_key:
-          secure: PGR/QURec4LRKaQ/NyiEzBGkHvSGqtv3RZQueAZ51Ky+8qU0vFSGd/F5mq76+0M9ZyjB5DtFiqsaiHrn1nNCjkcsS6Hc2y+kznxgHJVEq64eBKShorn0n10xSk5cMT70aDsA5+z8Tw9GrDaOuT8Q3OtUslhiNU3Xigyfl+Cy9OmB+4YJQMLE2Rkt14ElRHeTGcRLPhoU+3uxuQ3kjojAK8SlGUv1q3a+05GKW3vHs+vqYqxbKLNMyYu9i+VdN/2/bCWpwt5OW5uOWzbbq1S7tmDTs332okzR6sQuO4C5IszJdRJko6vRpd6sYUxvBbIOGUBhxShQDvMxUQvihUQrmncsMt5IaRB3fPUiInJrS8VabcY8XZWUzDtu6sCc27DEB+mAZcakJwApxOgW6nx+K62iCvV3vc0NRldyZ4YO5dsVC5IKFdEzxB0K+b5Fk0Jtgs6EARefcAmyQH4vLot7JkzE1h+47/Ijx00yxZ7V98yZlOq3Uo2m9YtP6L4YqgTnBsUVywi6pFrx8DnB6cX1S3wKtvkBY8ZZ9Us66aH8I8/ip1FmCOfbmtWMudY5GeZb5soI/a1AcovRk8tCZNISv2pEhOncm7ENXD5QQYizAlpu2BUy0+Q1ETD9H1UVBu17nUYxEWq62hqjpNDeD8IUXmMlCShBc2XTmvi47CsspL4=
-        bucket: shermify
-        local-dir: dist
-        acl: public_read
-        skip_cleanup: true
+  - stage: test
+    script: npm run lint
+  - script: npm test
+  - stage: deploy
+    deploy:
+      provider: s3
+      access_key_id: AKIAJZXTEI2P6XXOROOA
+      secret_access_key:
+        secure: qGm4GY4CMtOD8nTV7rMA7E9mFaN78xM8i1B/DiTrAtrpIl4xkE4eXSFvMacFGZta0O+m6wvsuKFBu71TmmeElbCvdkBCqalWSfI0ZoIA1DK2lOmkDZKvOiFJ7iHIqXfRbNmokeb2DTRv5YOP7c4RkifMUWBx/KJSCB0CkukhCmyWUJFn8KjO/lsdxzBFlhCWKCz8IkJ+p66+i1obvtwI1hw399OYCMiA0qEVHw80xaxRJEdzqOApKisglNvnI/roO5U3Uhe1XQk00Basd9iy0F1NlT7laiu6IxiQYTjEvXDlQUm4XH4+wqedafJlT+R6z2eb/HmeElsK41fUCX3vdPUHgeazp6Pe6wiGBsZxgGKWinh0/6wds97xU+/EQFh/JhsruVKJ6i3RiXwoSpR5VpoOqW5A96m+QICajcZgdAguhhEfXiRKxRsTrJKj5NgCl25xt4V2xEVy7N1mLZ2xSWZ2guGum/YFuA1IP2uUZwrf/qWyVc3jAVqZiPmObJez2VVJ/p8DWlpdsA1A7ylcA3JErTruvWp/vEmQgRc8ho63aBDyXH9GaTbBrGlfrD48Ssad5AMexvdmL6RYWTwlQG5fxvbGlUc2RZW3J0O/FJVkvLrdDQM830yc51Gg4fFft2ioo6a8hTyJ8ExyKbm9bj/aq+H8kYg2/lRDPmCY9LY=
+      bucket: shermify
+      local-dir: dist
+      acl: public_read
+      skip_cleanup: true
