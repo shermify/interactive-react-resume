@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Arrow from '../components/Arrow';
 
-const Home = (props) => {
+const Cover = (props) => {
   const { name, title } = props;
   return (
     <div id="home" className="jumbotron cover">
@@ -14,9 +14,14 @@ const Home = (props) => {
     </div>);
 };
 
-Home.propTypes = {
+Cover.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
-export default Home;
+Cover.defaultProps = {
+  name: '',
+  title: '',
+};
+
+export default Cover;

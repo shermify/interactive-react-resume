@@ -3,8 +3,8 @@ import Loader from '../components/Loader';
 import Navbar from '../containers/Navbar';
 import Experience from '../containers/Experience';
 import Skills from '../containers/Skills';
-import Profile from '../containers/Profile';
-import Landing from '../components/Home';
+import Profile from '../components/Profile';
+import Cover from '../components/Cover';
 import Contact from '../components/Contact';
 import mypic from '../images/me2.jpg';
 import '../images/favicon.ico';
@@ -35,7 +35,7 @@ class App extends React.Component {
     if (!this.state.isLoading) {
       return (
         <div>
-          <Landing name={resume.name} title={resume.title} />
+          <Cover name={resume.name} title={resume.title} />
           <Navbar />
           <Profile profile={resume.profile} headshot={mypic} />
           <Experience {...resume.experience} />
@@ -47,7 +47,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Loader />
+        <Cover />
       </div>
     );
   }
