@@ -4,9 +4,8 @@ const root = path.resolve(__dirname, '../');
 const src = path.resolve(root, 'src');
 const images = path.resolve(src, 'images');
 const output = path.resolve(root, 'dist');
-const sass = path.resolve(src, 'sass');
 const icons = path.resolve(images, 'icons');
 
 module.exports = {
-  root, src, images, output, sass, icons,
+  root, src, images, output, icons,
 };
