@@ -18,9 +18,13 @@ class Skills extends React.Component {
     return (
       <Section id="skills" title="Skills" lead={lead} quoteBy={quoteBy}>
         <h3>Programming</h3>
-
-        <SkillArea title="Programming" skills={skillList.programming} images={images} />
-
+        <Loader visible={!this.state.firstAreaLoaded} />
+        <LazyLoad
+          offsetBottom={250}
+          onContentVisible={() => { this.setState({ firstAreaLoaded: true }); }}
+        >
+          <SkillArea title="Programming" skills={skillList.programming} images={images} />
+        </LazyLoad>
         <h3>Devops/Tools</h3>
         <Loader visible={!this.state.secondAreaLoaded} />
         <LazyLoad
