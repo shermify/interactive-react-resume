@@ -54,6 +54,9 @@
           "percent": 100,
           "image": "node.png"
         }, {
+          "name": "C#/ASP.net",
+          "percent": 100
+        }, {
           "name": "HTML5",
           "percent": 100,
           "image": "html5.png"

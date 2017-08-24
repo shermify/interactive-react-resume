@@ -26,7 +26,8 @@ const Profile = (props) => {
             <ul className="list-unstyled">
               <li><Person style={iconStyle} />Name: Daniel Sherman</li>
               <li><MapMarker style={iconStyle} />Location: Chicago</li>
-              <li><Thumb style={iconStyle} />Favorite Food: Thai Curry</li>
+              <li><Thumb style={iconStyle} />Education: B.S. Biochemistry
+              Northern Illinois University</li>
             </ul></div>
         </div>
         <div className="col-lg-4 col-md-6 order-lg-3 mt-5">
