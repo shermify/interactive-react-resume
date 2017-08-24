@@ -1,5 +1,4 @@
 import React from 'react';
-import Loader from '../components/Loader';
 import Navbar from '../containers/Navbar';
 import Experience from '../containers/Experience';
 import Skills from '../containers/Skills';
