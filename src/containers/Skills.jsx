@@ -21,16 +21,18 @@ class Skills extends React.Component {
         <Loader visible={!this.state.firstAreaLoaded} />
         <LazyLoad
           offsetBottom={250}
-          onContentVisible={() => { this.setState({ firstAreaLoaded: true }); }}
-        >
+          onContentVisible={() => {
+            this.setState({ firstAreaLoaded: true });
+          }}>
           <SkillArea title="Programming" skills={skillList.programming} images={images} />
         </LazyLoad>
         <h3>Devops/Tools</h3>
         <Loader visible={!this.state.secondAreaLoaded} />
         <LazyLoad
           offsetBottom={250}
-          onContentVisible={() => { this.setState({ secondAreaLoaded: true }); }}
-        >
+          onContentVisible={() => {
+            this.setState({ secondAreaLoaded: true });
+          }}>
           <SkillArea title="DevOps/Infrastructure/Tools" skills={skillList.devops} images={images} />
         </LazyLoad>
       </Section>
@@ -42,14 +44,20 @@ Skills.propTypes = {
   lead: PropTypes.string,
   quoteBy: PropTypes.string,
   skillList: PropTypes.shape({
-    programming: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string,
-      percent: PropTypes.number,
-      img: PropTypes.string })),
-    devops: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string,
-      percent: PropTypes.number,
-      img: PropTypes.string })),
+    programming: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        percent: PropTypes.number,
+        img: PropTypes.string,
+      }),
+    ),
+    devops: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        percent: PropTypes.number,
+        img: PropTypes.string,
+      }),
+    ),
   }).isRequired,
 };
 

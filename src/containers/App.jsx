@@ -38,9 +38,9 @@ class App extends React.Component {
           <Cover name={resume.name} title={resume.title} />
           <Navbar />
           <Profile profile={resume.profile} headshot={mypic} />
-          <Experience {...resume.experience} />
-          <Skills {...resume.skills} />
-          <Contact {...resume.contact} />
+          <Experience experience={resume.experience} />
+          <Skills skills={resume.skills} />
+          <Contact contact={resume.contact} />
         </div>
       );
     }
