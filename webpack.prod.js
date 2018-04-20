@@ -5,11 +5,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin'); // eslint-disa
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
 const config = {
+  mode: 'production',
   devtool: 'hidden-source-map',
   entry: {
-    app: [
-      './src/index',
-    ],
+    app: ['./src/index'],
   },
   output: {
     path: path.output,
@@ -42,11 +41,14 @@ const config = {
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          use: [{
-            loader: 'css-loader',
-          }, {
-            loader: 'sass-loader',
-          }],
+          use: [
+            {
+              loader: 'css-loader',
+            },
+            {
+              loader: 'sass-loader',
+            },
+          ],
         }),
         include: path.src,
       },
@@ -59,31 +61,15 @@ const config = {
       },
     }),
     new ExtractTextPlugin('assets/styles.css'),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      beautify: false,
-      mangle: {
-        screw_ie8: true,
-        keep_fnames: false,
-      },
-      compress: {
-        screw_ie8: true,
-      },
-      comments: false,
-    }),
+
     new HtmlWebpackPlugin({ inject: true, template: './index.html' }),
-    new SWPrecacheWebpackPlugin(
-      {
-        cacheId: 'dsherman-resume',
-        filename: 'service-worker.js',
-        minify: true,
-        navigateFallback: '/index.html',
-        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
-      },
-    ),
+    new SWPrecacheWebpackPlugin({
+      cacheId: 'dsherman-resume',
+      filename: 'service-worker.js',
+      minify: true,
+      navigateFallback: '/index.html',
+      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+    }),
   ],
   watchOptions: {
     ignored: /node_modules/,

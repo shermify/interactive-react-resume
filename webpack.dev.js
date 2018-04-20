@@ -3,12 +3,10 @@ const webpack = require('webpack'); // eslint-disable-line import/no-extraneous-
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
 const config = {
+  mode: 'development',
   devtool: 'source-map',
   entry: {
-    app: [
-      'react-hot-loader/patch',
-      './src/index',
-    ],
+    app: ['react-hot-loader/patch', './src/index'],
   },
   output: {
     path: path.output,
@@ -41,13 +39,17 @@ const config = {
       },
       {
         test: /\.scss$/,
-        use: [{
-          loader: 'style-loader',
-        }, {
-          loader: 'css-loader',
-        }, {
-          loader: 'sass-loader',
-        }],
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
         include: path.src,
       },
     ],
