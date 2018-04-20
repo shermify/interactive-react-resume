@@ -9,6 +9,5 @@ const Arrow = () => (
       <path className="a3" d="M0 30 L50 42 L100 30" />
     </svg>
   </Link>
-
 );
 export default Arrow;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
 
-const MenuItem = (props) => {
+const MenuItem = props => {
   const linkProps = {
     ...props,
     className: 'nav-link',

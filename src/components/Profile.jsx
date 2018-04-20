@@ -14,7 +14,7 @@ const iconStyle = {
   fill: '#4d004d',
 };
 
-const Profile = (props) => {
+const Profile = props => {
   const { profile, headshot } = props;
   const content = (
     <div>
@@ -24,18 +24,33 @@ const Profile = (props) => {
           <h3>Details</h3>
           <div>
             <ul className="list-unstyled">
-              <li><Person style={iconStyle} />Name: Daniel Sherman</li>
-              <li><MapMarker style={iconStyle} />Location: Chicago</li>
-              <li><Thumb style={iconStyle} />Education: B.S. Biochemistry
-              Northern Illinois University</li>
-            </ul></div>
+              <li>
+                <Person style={iconStyle} />Name: Daniel Sherman
+              </li>
+              <li>
+                <MapMarker style={iconStyle} />Location: Chicago
+              </li>
+              <li>
+                <Thumb style={iconStyle} />Education: B.S. Biochemistry Northern Illinois University
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="col-lg-4 col-md-6 order-lg-3 mt-5">
           <h3>Links</h3>
           <ul className="list-unstyled">
-            <li><a href="https://linkedin.com/in/dlsherman"><img src={linkedin} alt="Linkedin Logo" style={iconStyle} />Linkedin</a></li>
-            <li><img src={github} alt="Github Logo" style={iconStyle} /><a href="https://github.com/shermify/interactive-react-resume">Github</a></li>
-            <li><a href="https://shermify.com">https://shermify.com</a></li>
+            <li>
+              <a href="https://linkedin.com/in/dlsherman">
+                <img src={linkedin} alt="Linkedin Logo" style={iconStyle} />Linkedin
+              </a>
+            </li>
+            <li>
+              <img src={github} alt="Github Logo" style={iconStyle} />
+              <a href="https://github.com/shermify/interactive-react-resume">Github</a>
+            </li>
+            <li>
+              <a href="https://shermify.com">https://shermify.com</a>
+            </li>
           </ul>
         </div>
         <div className="col-lg-4 order-lg-2 mt-5">

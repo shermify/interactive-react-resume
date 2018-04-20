@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LoaderImage from '../images/icons/loader.svg';
 
-const Loader = (props) => {
+const Loader = props => {
   const loaderStyle = {
     height: '312px',
     textAlign: 'center',
@@ -11,7 +11,9 @@ const Loader = (props) => {
   };
 
   return (
-    <div style={loaderStyle}><LoaderImage /></div>
+    <div style={loaderStyle}>
+      <LoaderImage />
+    </div>
   );
 };
 

@@ -1,19 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Section = (props) => {
+const Section = props => {
   const { id, title, lead, quoteBy, color, bgcolor } = props;
   return (
     <section id={id} style={{ backgroundColor: bgcolor, color }}>
       <div className="container section">
         <h2>{title}</h2>
-        <p className="lead">{lead}<br />
+        <p className="lead">
+          {lead}
+          <br />
           {quoteBy}
         </p>
         <hr />
         <div>{props.children}</div>
       </div>
-    </section>);
+    </section>
+  );
 };
 
 Section.propTypes = {

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImage from '../images/logos/defaultSkill.png';
 
-const Skill = (props) => {
+const Skill = props => {
   const { size, percent, label, img } = props;
   return (
     <div className="skill">
@@ -11,7 +11,7 @@ const Skill = (props) => {
           <img src={img} alt={label} height="45px" width="45px" />
         </div>
         <div className="col">
-          <svg width={size} height="15px" >
+          <svg width={size} height="15px">
             <defs>
               <linearGradient id="Gradient1">
                 <stop stopColor="blue" offset="0%" />
@@ -24,7 +24,6 @@ const Skill = (props) => {
           <p style={{ width: size }}>{label}</p>
         </div>
       </div>
-
     </div>
   );
 };
@@ -39,7 +38,6 @@ Skill.defaultProps = {
   percent: 0,
   label: '',
   size: 116,
-  strokewidth: 26,
   img: defaultImage,
 };
 
