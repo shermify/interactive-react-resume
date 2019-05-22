@@ -32,6 +32,8 @@ h2 {
 
 h3 {
   text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
 hr {
@@ -43,7 +45,7 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
@@ -62,6 +64,10 @@ li {
   max-width: 1280px;
   padding: 40px 15% 60px;
   text-align: justify;
+}
+
+.profile-description {
+  margin-bottom: 30px;
 }
 
 .animate-nav {

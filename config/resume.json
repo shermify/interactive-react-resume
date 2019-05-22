@@ -1,14 +1,30 @@
 {
   "name": "Daniel Sherman",
-  "title": "Interactive Resume",
+  "title": "Senior Software Engineer",
   "profile": {
-    "lead": "A versitile software developer with a strong science and math background.",
-    "description": "Hi, my name is Daniel. I'm a web-oriented software engineer with a strong focus on quality and user experience.  I love working in a team but am also very comfortable working alone or taking the lead.  Complex, data-driven web applications are my specialty and I'm always up for a new challenege!"
+    "lead": "A versitile software engineer with a strong science and math background.",
+    "description": {
+      "paragraphs":["Hi, my name is Daniel. I'm a software engineer who enjoys creating rich, beautiful, and performant user experiences on the front-end and working with modern back-end application architecture at scale.", "I have deep fullstack experience and many years of experience with modern frameworks such as node.js, react, and redux. I'm comfortable working in agile environments with CI/CD and working with other engineers of all stripes and backgrounds, including mentoring junior developers."]
+    },
+    "strengths":[
+      "Skills and experience to take a project from conception through design to production and leave a clean, maintainable codebase that will generate value for many years to come.",
+      "5 years of experience with react and redux, building extremely large and complex front end applications. Well versed in modern front-end architecture and patterns.",
+      "Comfortable working on the backend with significant experience in microservice architecture, object-oriented programming, and RESTful APIs. I've been given the unofficial title of SQL wizard.",
+      "I enjoy mentoring junior engineers and leading the charge on style and code quality standards and practices of the team.",
+      "Imagination and passion to think outside the box and contribute to the big picture."
+    ]
   },
   "experience": {
     "lead": "\"In wisdom gathered over time I have found that every experience is a form of exploration.\"",
     "quoteBy": "- Ansel Adams",
     "experienceList": [
+      {
+        "company": "Tempus",
+        "date": "2017-present",
+        "description": {
+          "paragraphs": ["At Tempus, I led front-end development on a greenfield project to build a next-generation sequencing web platform. After 9 months of development and ~200k lines of code, we successfully launched into a high-throughput lab with zero downtime.", "I also worked to scale up a groundbreaking platform that collects, structures, and analyzes clinical and genomic data at scale to generate therapeutic insight."]
+        }
+      }, 
       {
         "company": "Phigenics LLC",
         "date": "2010-2017",
@@ -21,18 +37,6 @@
             "text": "Phigenics"
           }
         ]
-      }, {
-        "company": "Nerites Corp",
-        "date": "2008-2010",
-        "description": {
-          "paragraphs": ["Nerites was spun off out of the Messersmith research group at Northwestern while I was working there as a research assistant. As one of the first employees at Nerites, I was involved in building out our laboratory and testing capabilities, running experiments, and performing data analysis on the results."]
-        }
-      }, {
-        "company": "Northwestern University",
-        "date": "2008-2010",
-        "description": {
-          "paragraphs": ["I started working at Northwestern University as a research assistant. After about 6 months, I began my own research on self-assembling silver nanoparticle monolayer coatings. I contributed to two patents during my time at Northwestern."]
-        }
       }
     ]
   },

@@ -4,6 +4,7 @@ import Section from './Section';
 
 const Contact = props => {
   const { lead, quoteBy, text, phone, email } = props;
+  console.log(props);
   return (
     <Section id="contact" title="Contact" bgcolor="#f2f2f2" lead={lead} quoteBy={quoteBy}>
       <div>

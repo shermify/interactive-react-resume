@@ -8,32 +8,23 @@ import Loader from '../components/Loader';
 class Skills extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { firstAreaLoaded: false, secondAreaLoaded: false };
+    this.state = { firstAreaLoaded: false };
   }
 
   render() {
+    const { firstAreaLoaded } = this.state;
     const { skillList, lead, quoteBy } = this.props;
     const importAll = r => r.keys().reduce((memo, item) => ({ ...memo, [item.replace('./', '')]: r(item) }), []);
     const images = importAll(require.context('../images/logos', true));
     return (
-      <Section id="skills" title="Skills" lead={lead} quoteBy={quoteBy}>
-        <h3>Programming</h3>
-        <Loader visible={!this.state.firstAreaLoaded} />
+      <Section id="skills" title="Core Skills" lead={lead} quoteBy={quoteBy}>
+        <Loader visible={!firstAreaLoaded} />
         <LazyLoad
           offsetBottom={250}
           onContentVisible={() => {
             this.setState({ firstAreaLoaded: true });
           }}>
           <SkillArea title="Programming" skills={skillList.programming} images={images} />
-        </LazyLoad>
-        <h3>Devops/Tools</h3>
-        <Loader visible={!this.state.secondAreaLoaded} />
-        <LazyLoad
-          offsetBottom={250}
-          onContentVisible={() => {
-            this.setState({ secondAreaLoaded: true });
-          }}>
-          <SkillArea title="DevOps/Infrastructure/Tools" skills={skillList.devops} images={images} />
         </LazyLoad>
       </Section>
     );
